@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">17</td><td class="numi">17</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">25.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Testcases.VerifyLogin<td><a href="#m1"><b>ContextMenu</b>  </a></td><td class="numi">1</td><td>1663202868149</td><td class="numi">337</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="17">Testcases.VerifyLogin<td><a href="#m2"><b>DragNDrop</b>  </a></td><td class="numi">1</td><td>1663202868514</td><td class="numi">576</td></tr><tr class="passedodd"><td><a href="#m3"><b>DropDown</b>  </a></td><td class="numi">1</td><td>1663202869090</td><td class="numi">1292</td></tr><tr class="passedodd"><td><a href="#m4"><b>DyanamicContect</b>  </a></td><td class="numi">1</td><td>1663202870382</td><td class="numi">953</td></tr><tr class="passedodd"><td><a href="#m5"><b>DyanamicControls</b>  </a></td><td class="numi">1</td><td>1663202871335</td><td class="numi">1104</td></tr><tr class="passedodd"><td><a href="#m6"><b>DyanamicLoading</b>  </a></td><td class="numi">1</td><td>1663202872440</td><td class="numi">728</td></tr><tr class="passedodd"><td><a href="#m7"><b>FileDownload</b>  </a></td><td class="numi">1</td><td>1663202873171</td><td class="numi">726</td></tr><tr class="passedodd"><td><a href="#m8"><b>FileUpload</b>  </a></td><td class="numi">1</td><td>1663202873899</td><td class="numi">1000</td></tr><tr class="passedodd"><td><a href="#m9"><b>FloatingMenu</b>  </a></td><td class="numi">1</td><td>1663202874903</td><td class="numi">1653</td></tr><tr class="passedodd"><td><a href="#m10"><b>Iframe</b>  </a></td><td class="numi">1</td><td>1663202876557</td><td class="numi">3778</td></tr><tr class="passedodd"><td><a href="#m11"><b>JavaScriptAlerts</b>  </a></td><td class="numi">1</td><td>1663202881972</td><td class="numi">2542</td></tr><tr class="passedodd"><td><a href="#m12"><b>JavaScriptErrors</b>  </a></td><td class="numi">1</td><td>1663202884517</td><td class="numi">595</td></tr><tr class="passedodd"><td><a href="#m13"><b>MouseHover</b>  </a></td><td class="numi">1</td><td>1663202880336</td><td class="numi">1636</td></tr><tr class="passedodd"><td><a href="#m14"><b>NotificationMessage</b>  </a></td><td class="numi">1</td><td>1663202886092</td><td class="numi">1443</td></tr><tr class="passedodd"><td><a href="#m15"><b>OpenInNewTab</b>  </a></td><td class="numi">1</td><td>1663202885112</td><td class="numi">977</td></tr><tr class="passedodd"><td><a href="#m16"><b>checkBoxTest</b>  </a></td><td class="numi">1</td><td>1663202867233</td><td class="numi">914</td></tr><tr class="passedodd"><td><a href="#m17"><b>loginFailure</b>  </a></td><td class="numi">1</td><td>1663202864217</td><td class="numi">2022</td></tr><tr class="passedodd"><td><a href="#m18"><b>loginSuccess</b>  </a></td><td class="numi">1</td><td>1663202866243</td><td class="numi">989</td></tr>
+</table>
+<h1>Default test</h1>
+<a id="m1"></a><h2>Testcases.VerifyLogin:ContextMenu</h2>
+<div style="padding-left:3em">
+<p>unexpected alert open: {Alert text : You selected a context menu}
+  (Session info: chrome=105.0.5195.102): You selected a context menu
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-3C1D9SD&apos;, ip: &apos;192.168.0.11&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73197039df062ae3e5591b5e62f5de8f, findElement {using=id, value=hot-spot}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\16572\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62499/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73197039df062ae3e5591b5e62f5de8f</p>
+org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+<br/>at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+<br/>at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+<br/>at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+<br/>at com.localhost.allPages.ContexMenuPages.taskContexMenu(ContexMenuPages.java:24)
+<br/>at Testcases.VerifyLogin.ContextMenu(VerifyLogin.java:93)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>Testcases.VerifyLogin:FileUpload</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>Testcases.VerifyLogin:MouseHover</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>Testcases.VerifyLogin:DyanamicControls</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>Testcases.VerifyLogin:DyanamicContect</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>Testcases.VerifyLogin:OpenInNewTab</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>Testcases.VerifyLogin:DropDown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m8"></a><h2>Testcases.VerifyLogin:JavaScriptAlerts</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m9"></a><h2>Testcases.VerifyLogin:checkBoxTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m10"></a><h2>Testcases.VerifyLogin:DyanamicLoading</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m11"></a><h2>Testcases.VerifyLogin:FileDownload</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m12"></a><h2>Testcases.VerifyLogin:JavaScriptErrors</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m13"></a><h2>Testcases.VerifyLogin:DragNDrop</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m14"></a><h2>Testcases.VerifyLogin:NotificationMessage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m15"></a><h2>Testcases.VerifyLogin:FloatingMenu</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m16"></a><h2>Testcases.VerifyLogin:loginSuccess</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m17"></a><h2>Testcases.VerifyLogin:loginFailure</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m18"></a><h2>Testcases.VerifyLogin:Iframe</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

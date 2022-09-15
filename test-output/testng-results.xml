@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-15T00:47:41Z" name="Default suite" finished-at="2022-09-15T00:48:07Z" duration-ms="25894">
+    <groups>
+    </groups>
+    <test started-at="2022-09-15T00:47:41Z" name="Default test" finished-at="2022-09-15T00:48:07Z" duration-ms="25894">
+      <class name="Testcases.VerifyLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:41Z" name="setUp" finished-at="2022-09-14T17:47:44Z" duration-ms="2268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFailure()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:44Z" name="loginFailure" finished-at="2022-09-14T17:47:46Z" duration-ms="2022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFailure -->
+        <test-method signature="loginSuccess()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:46Z" name="loginSuccess" finished-at="2022-09-14T17:47:47Z" duration-ms="989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccess -->
+        <test-method signature="checkBoxTest()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:47Z" name="checkBoxTest" finished-at="2022-09-14T17:47:48Z" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxTest -->
+        <test-method signature="ContextMenu()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:48Z" name="ContextMenu" finished-at="2022-09-14T17:47:48Z" duration-ms="337" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : You selected a context menu}
+  (Session info: chrome=105.0.5195.102): You selected a context menu
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-3C1D9SD', ip: '192.168.0.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73197039df062ae3e5591b5e62f5de8f, findElement {using=id, value=hot-spot}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\16572\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62499/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73197039df062ae3e5591b5e62f5de8f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You selected a context menu}
+  (Session info: chrome=105.0.5195.102): You selected a context menu
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-3C1D9SD', ip: '192.168.0.11', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73197039df062ae3e5591b5e62f5de8f, findElement {using=id, value=hot-spot}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\16572\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62499/devtoo..., se:cdpVersion: 105.0.5195.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 73197039df062ae3e5591b5e62f5de8f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at com.localhost.allPages.ContexMenuPages.taskContexMenu(ContexMenuPages.java:24)
+	at Testcases.VerifyLogin.ContextMenu(VerifyLogin.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:715)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:907)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1237)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:51)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:85)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1197)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1122)
+	at org.testng.TestNG.run(TestNG.java:1030)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContextMenu -->
+        <test-method signature="DragNDrop()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:48Z" name="DragNDrop" finished-at="2022-09-14T17:47:49Z" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DragNDrop -->
+        <test-method signature="DropDown()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:49Z" name="DropDown" finished-at="2022-09-14T17:47:50Z" duration-ms="1292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDown -->
+        <test-method signature="DyanamicContect()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:50Z" name="DyanamicContect" finished-at="2022-09-14T17:47:51Z" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DyanamicContect -->
+        <test-method signature="DyanamicControls()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:51Z" name="DyanamicControls" finished-at="2022-09-14T17:47:52Z" duration-ms="1104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DyanamicControls -->
+        <test-method signature="DyanamicLoading()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:52Z" name="DyanamicLoading" finished-at="2022-09-14T17:47:53Z" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DyanamicLoading -->
+        <test-method signature="FileDownload()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:53Z" name="FileDownload" finished-at="2022-09-14T17:47:53Z" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownload -->
+        <test-method signature="FileUpload()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:53Z" name="FileUpload" finished-at="2022-09-14T17:47:54Z" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileUpload -->
+        <test-method signature="FloatingMenu()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:54Z" name="FloatingMenu" finished-at="2022-09-14T17:47:56Z" duration-ms="1653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FloatingMenu -->
+        <test-method signature="Iframe()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:47:56Z" name="Iframe" finished-at="2022-09-14T17:48:00Z" duration-ms="3778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Iframe -->
+        <test-method signature="MouseHover()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:48:00Z" name="MouseHover" finished-at="2022-09-14T17:48:01Z" duration-ms="1636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MouseHover -->
+        <test-method signature="JavaScriptAlerts()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:48:01Z" name="JavaScriptAlerts" finished-at="2022-09-14T17:48:04Z" duration-ms="2542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptAlerts -->
+        <test-method signature="JavaScriptErrors()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:48:04Z" name="JavaScriptErrors" finished-at="2022-09-14T17:48:05Z" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- JavaScriptErrors -->
+        <test-method signature="OpenInNewTab()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:48:05Z" name="OpenInNewTab" finished-at="2022-09-14T17:48:06Z" duration-ms="977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenInNewTab -->
+        <test-method signature="NotificationMessage()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:48:06Z" name="NotificationMessage" finished-at="2022-09-14T17:48:07Z" duration-ms="1443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotificationMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Testcases.VerifyLogin@f107c50]" started-at="2022-09-14T17:48:07Z" name="tearDown" finished-at="2022-09-14T17:48:07Z" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Testcases.VerifyLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
